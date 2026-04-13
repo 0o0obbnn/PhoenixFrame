@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest tests/api/test_api_client.py -v)",
+      "Bash(python:*)",
+      "Bash(PYTHONPATH=../src python performance_testing_minimal.py)",
+      "Bash(PYTHONPATH=src python examples/performance_testing_minimal.py)",
+      "Bash(PYTHONPATH=./src python ./examples/performance_testing_minimal.py)",
+      "Bash(grep:*)",
+      "Bash(PYTHONPATH=./src python tests/performance/test_performance_integration.py)",
+      "Bash(PYTHONPATH=./src python test_performance_simple.py)",
+      "Bash(find:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": []
+  }
+}
